@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clã Doença</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo do Clã Doença">
+    <div>
+      <h1>Clã Doença</h1>
+      <p>O melhor que tem 💥</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#introducao">Introdução</a>
+    <a href="#integrantes">Integrantes</a>
+    <a href="#objetivos">Objetivos</a>
+  </nav>
+
+  <section id="introducao" class="animate-left">
+    <h2>Introdução</h2>
+    <p>
+      O <strong>Clã Doença</strong> nasceu da vontade de aprender de forma leve, inteligente e colaborativa. Somos mais do que uma dupla: somos uma ideia, um movimento estudantil que acredita que a criatividade e o esforço andam lado a lado. Neste site, mostramos quem somos e por que esse projeto importa.
+    </p>
+  </section>
+
+  <section id="integrantes" class="animate-right">
+    <h2>Integrantes</h2>
+    <ul>
+      <li><strong>Pedro Novacki</strong>: Com raciocínio rápido, mente aberta e muito bom humor, Pedro é o combustível do time. Ele busca sempre aprender, se destacar e trazer soluções fora da caixa. Um verdadeiro guerreiro do conhecimento.</li>
+      <li><strong>Ilany</strong>: Organizado, dedicado e com uma mente estratégica, Ilany é quem equilibra as ideias e dá direção ao projeto. Sua atenção aos detalhes e clareza na comunicação tornam o trabalho mais eficaz e bem feito.</li>
+    </ul>
+  </section>
+
+  <section id="objetivos" class="animate-zoom">
+    <h2>Objetivos</h2>
+    <ul>
+      <li>Dar sempre o melhor nas atividades escolares, com foco e dedicação;</li>
+      <li>Manter uma postura responsável e comprometida em sala de aula;</li>
+      <li>Superar desafios juntos e aprender com cada experiência;</li>
+      <li>Buscar crescimento acadêmico e pessoal, como grupo e como indivíduos;</li>
+      <li>Inovar, inspirar e provar que a diversão pode andar junto com a responsabilidade.</li>
+    </ul>
+  </section>
+
+  <footer onclick="mostrarEasterEgg()">
+    <p>&copy; 2025 Clã Doença - Projeto Escolar</p>
+    <img src="bola.png" alt="Bola de futebol" id="bola" />
+  </footer>
+
+  <script>
+    function mostrarEasterEgg() {
+      const bola = document.getElementById("bola");
+      bola.classList.add("rolando");
+      setTimeout(() => bola.classList.remove("rolando"), 5000);
+    }
+  </script>
+
+</body>
+</html>
